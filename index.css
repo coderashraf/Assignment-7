@@ -93,7 +93,8 @@
   margin-top: 50px;
   color: white;
   margin-bottom: 20px;
-  overflow: auto;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .section-3 h1 {
   background: rgb(251, 81, 81);
@@ -103,12 +104,13 @@
 }
 .left-area {
   float: left;
-  width: 90%;
+  width: 92%;
   font-weight: bold;
+  padding-left: 5px;
 }
 .boxes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .boxes div {
   margin-top: 20px;
@@ -117,38 +119,37 @@
 .box-a {
   background: rgb(103, 205, 117);
   font-size: 40px;
-  margin-right: 20px;
+  margin-right: 25px;
   text-align: center;
-  padding: 0 28px;
-  width: 410px;
+  padding: 0px 30px;
 }
 .box-b {
   background: rgb(55, 155, 255);
   font-size: 35px;
-  margin-right: 20px;
-  width: 410px;
+  margin-right: 25px;
 }
 .box-c {
   background: rgb(96, 96, 238);
   font-size: 30px;
-  padding-right: 40px;
-  width: 410px;
+  text-align: left;
+  padding-right: 60px;
 }
-.boxes .box-d {
-  width: 98.4%;
+.box-d {
   background: rgb(250, 166, 63);
   font-size: 30px;
-  height: 185px;
+  grid-column: 1/4;
+  height: 180px;
 }
 
 .right-area {
   float: right;
   clear: right;
-  width: 10%;
+  box-sizing: border-box;
+  width: 6%;
   margin-top: 20px;
   background: rgb(56, 53, 53);
-  font-size: 25px;
-  height: 310px;
+  font-size: 23px;
+  height: 303px;
   padding-left: 4px;
 }
 
